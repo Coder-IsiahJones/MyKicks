@@ -1,0 +1,181 @@
+﻿/*Gallery View of Shoes CSS Starts Here*/
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.description {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.gallery {
+    border-style: groove;
+    height: 450px;
+    padding: 0rem 1rem 33rem 1rem;
+    margin-bottom: 1rem;
+    transition: 0.8s;
+}
+
+.gallery:hover {
+    opacity: 0.70;
+}
+
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+/*Gallery View of Shoes CSS Ends Here*/
+
+/*New Menu Setup Start*/
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    border-right: 1px solid #bbb;
+}
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+    }
+
+        /* Change the link color to #111 (black) on hover */
+        li a:hover {
+            background-color: #111;
+            text-decoration: none;
+        }
+
+.active {
+    background-color: #F70D10;
+}
+/*New Menu Setup End*/
+
+/*Table Format CSS Starts Here*/
+.tableFormat {
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.table-grad {
+    background: #CB356B; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #BD3F32, #CB356B); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #BD3F32, #CB356B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tableFormatFooter {
+    background: #333333;
+    color: white;
+    font-size: large;
+    text-align: center;
+    bottom: 0;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    height: 5rem;
+    width: 100%;
+    padding-left: 48rem;
+    padding-top: 1.55rem;
+    margin: 0;
+
+}
+/*Table Format CSS Ends Here*/
+
+
+.FormViewFormat {
+    width: 100%;
+    padding-bottom: 0.7rem;
+    padding-left: 0.4rem;
+    padding-top: 0.5rem;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border-color: #EE120D;
+    text-align:left;
+   
+}
+
+.btnFormat {
+    background-color: #333333;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 0.2rem;
+}
+
+.btnFormat-ColorOnly {
+    background-color: #333333;
+    color: white;
+    cursor: pointer;
+}
+
+.table-container {
+    background-color: #C5CBD2;
+    border-style: ridge;
+    border-width: thick;
+    margin-left: 5px;
+    width: 50rem;
+    margin-top: 3rem;
+    height: 55rem;
+}
+
+.table-container-center {
+   background-color: #C5CBD2;
+   width: 100%;
+   height: auto;
+}
+
+.container-afu {
+    padding: 5rem 5rem 0rem 5rem;
+    height: 55rem;
+    
+}
+
+.shoes-format {
+    height: 60rem;
+}

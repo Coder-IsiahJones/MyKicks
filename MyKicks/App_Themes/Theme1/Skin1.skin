@@ -1,0 +1,9 @@
+﻿
+
+<asp:Label runat="server" SkinID="skiLabelFooter" 
+    ForeColor="Red" 
+    Font-Bold="true" />
+
+<asp:Label runat="server" SkinID="skiLabelTitle" 
+    ForeColor="Black" 
+    Font-Bold="true" Font-Size="Large" />

@@ -1,0 +1,86 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="Jones.Isiah.Chapter17.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="test">
+            <asp:Table runat="server" CssClass="table-grad">
+                <asp:TableRow>
+                    <asp:TableCell>
+                        <asp:Image runat="server" ImageUrl="~/Files/Screenshot_1.png" />
+                    </asp:TableCell>
+                </asp:TableRow>
+            </asp:Table>
+
+            <asp:Table runat="server">
+                <asp:TableRow>
+                    <asp:TableCell VerticalAlign="Top">
+                        <asp:Table runat="server">
+                            <asp:TableRow>
+                                <asp:TableCell>
+                                    <asp:Label runat="server" ID="lblUser" Text="User" />
+                                </asp:TableCell>
+                            </asp:TableRow>
+                            <asp:TableRow>
+                                <asp:TableCell>
+                                    <asp:Label runat="server" ID="lblPageTitle" Text="Home" />
+                                </asp:TableCell>
+                            </asp:TableRow>
+                            <asp:TableRow>
+                                <asp:TableCell>
+                                    <asp:Label runat="server" ID="lblMessage" ForeColor="Green" Text="Please Login." />
+                                </asp:TableCell>
+                            </asp:TableRow>
+                            <asp:TableRow>
+                                <asp:TableCell>
+                                    <asp:LinkButton runat="server" ID="btnLog" CausesValidation="false" PostBackUrl="~/LoginPage.aspx" Text="[Login]" />
+                                </asp:TableCell>
+                            </asp:TableRow>
+                        </asp:Table>
+                    </asp:TableCell>
+                </asp:TableRow>
+            </asp:Table>
+
+            <nav class="nav-bar">
+                <ul>
+                    <li><a class="active" href="Home.aspx">Home</a></li>
+                    <li><a href="MaintainBrands.aspx">Maintain Brands</a></li>
+                    <li><a href="MaintainShoes.aspx">Maintain Shoes</a></li>
+                    <li><a href="UploadShoeImages.aspx">Upload</a></li>
+                    <li><a href="About.aspx">About</a></li>
+                    <li style="float: right"><a class="active" href="Login.aspx">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <br />
+            <br />
+
+              <asp:Table runat="server" CssClass="tableFormatFooter" HorizontalAlign="left">
+                <asp:TableRow>
+                    <asp:TableCell>
+                        <asp:Label runat="server" ID="lblServer" Text="Server" SkinID="skiLabelFooter" />
+                        <asp:Label runat="server" ID="lblServerInfo" />
+                        <asp:Label runat="server" ID="lblVersion" Text="Version" SkinID="skiLabelFooter" />
+                        <asp:Label runat="server" ID="lblVersionInfo" />
+                        <asp:Label runat="server" ID="lblDate" Text="Date " SkinID="skiLabelFooter" />
+                        <asp:Label runat="server" ID="lblDateInfo" />
+                        <asp:Label runat="server" ID="lblContact" Text="Contact" SkinID="skiLabelFooter" />
+                        <asp:Label runat="server" ID="lblContactInfo" />
+                    </asp:TableCell>
+                </asp:TableRow>
+            </asp:Table>
+
+        
+    </form>
+</body>
+</html>
