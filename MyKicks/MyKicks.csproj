@@ -72,6 +72,7 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="App_Themes\Theme1\StyleSheet1.css" />
+    <Content Include="css\imagehover.css" />
     <Content Include="css\main.css" />
     <Content Include="css\util.css" />
     <Content Include="Files\https___bae.hypebeast.com_files_2019_03_best-sneaker-store-women-copenhagen-denmark-stockholm-sweden-helsinki-finland-oslo-norway-reykjavik-iceland-scandinavia-5-1.jpg" />

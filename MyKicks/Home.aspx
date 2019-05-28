@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     
-
+ 
 
 
    <%--Create datasource for ListView for brand.--%>
@@ -19,19 +19,28 @@
     <asp:ListView runat="server" ID="livShoe"
         DataSourceID="sdsListViewShoe">
         <ItemTemplate>
+
             <div class="responsive">
-                <div class="gallery">
-                    <asp:Image runat="server" ImageUrl='<%# "~/ShoeImages/" + Eval("Image") %>' />
-                    <div class="description">
-                        <asp:Label runat="server" ID="lblDescription" Text='<%# Bind("Shoe") %>' /><br />
-                        <asp:Label runat="server" ID="lblStyle"  Text='<%# Bind("Style") %>' />
-                        <asp:Label runat="server" ID="lblColor" Text='<%# Bind("Color") %>' /><br />
-                        <div class="size">
-                        <asp:Label runat="server" ID="lblSize" Text='<%# Bind("Size") %>' />
+                <figure class="imghvr-fade">
+                    <div class="gallery">
+
+                        <asp:Image runat="server" ImageUrl='<%# "~/ShoeImages/" + Eval("Image") %>' />
+                        <div class="description">
+                            <figcaption>
+                                <asp:Label runat="server" ID="lblDescription" Text='<%# Bind("Shoe") %>' /><br />
+                                <asp:Label runat="server" ID="lblStyle" Text='<%# Bind("Style") %>' />
+                                <asp:Label runat="server" ID="lblColor" Text='<%# Bind("Color") %>' /><br />
+                                <div class="size">
+                                    <asp:Label runat="server" ID="lblSize" Text='<%# Bind("Size") %>' />
+                                </div>
+                            </figcaption>
+
                         </div>
-                    </div>
                 </div>
+                    </figure>
+                    
             </div>
+
         </ItemTemplate>
 
     </asp:ListView>
